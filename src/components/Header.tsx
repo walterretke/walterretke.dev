@@ -34,17 +34,17 @@ export default function Header() {
       }`}
     >
       <div className="flex justify-between items-center py-5 px-6 lg:px-40 text-white">
-        <h2 className="text-2xl sm:text-3xl font-semibold tracking-wide">
+        <a href="/home"><h2 className="text-2xl sm:text-3xl font-semibold tracking-wide">
           Walter<span className='text-orange-500'>.dev</span>
-        </h2>
+        </h2></a>
         <div className="hidden md:flex gap-4 md:gap-6 lg:gap-8 text-sm sm:text-lg">
           <ul className="flex gap-4 md:gap-6 lg:gap-8">
-            <li className="hover:cursor-pointer hover:text-gray-400 transition">Início</li>
-            <li className="hover:cursor-pointer hover:text-gray-400 transition">Sobre</li>
+            <a href="/home"><li className="hover:cursor-pointer hover:text-gray-400 transition">Início</li></a>
+            <a href=""><li className="hover:cursor-pointer hover:text-gray-400 transition">Sobre</li></a>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">Serviços</li>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">Portfólio</li>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">Blog</li>
-            <li className="hover:cursor-pointer hover:text-gray-400 transition">Contato</li>
+           <a href="/contact"><li className="hover:cursor-pointer hover:text-gray-400 transition">Contato</li></a>
           </ul>
           <ul className="flex gap-4">
             <li className="hover:cursor-pointer flex items-center hover:text-gray-400 transition">

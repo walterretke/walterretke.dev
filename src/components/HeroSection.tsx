@@ -44,7 +44,7 @@ export default function HeroSection() {
           </p>
           <div className="mt-10 flex justify-center gap-x-4 sm:gap-x-6">
             <a
-              href="#"
+              href="/contact"
               className="rounded-md bg-orange-600 px-4 py-2.5 text-base sm:text-lg font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
             >
               Quer fazer um projeto?

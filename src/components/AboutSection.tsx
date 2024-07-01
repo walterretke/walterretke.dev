@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import { useAnimation, motion } from 'framer-motion';
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { useAnimation, motion } from "framer-motion";
 
 const SobreMimSection = () => {
   const controls = useAnimation();
@@ -12,9 +12,9 @@ const SobreMimSection = () => {
 
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start("visible");
     } else {
-      controls.start('hidden');
+      controls.start("hidden");
     }
   }, [controls, inView]);
 
@@ -24,52 +24,36 @@ const SobreMimSection = () => {
   };
 
   return (
-    <section className="flex flex-col items-center py-16 bg-black text-white">
-      <motion.h2
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={variants}
-        className="text-4xl font-semibold text-center mb-12"
+    <section className="flex flex-col items-center px-4 py-4 bg-black text-white">
+      <motion.div 
+      className="min-h-10 min-w-10 bg-gray-900 flex sm:flex-row flex-col p-5 rounded-md border border-gray-800"
       >
-        Sobre mim
-      </motion.h2>
-      <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={variants}
-        className="flex flex-col md:flex-row items-center max-w-6xl mx-auto"
-      >
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-          className="w-full md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0"
-        >
-          <img src="/images/Walter.png" alt="Walter" className="w-50 h-50 md:w-50 md:h-50 rounded-full" />
-        </motion.div>
-        <motion.div
-          ref={ref}
-          initial="hidden"
-          animate={controls}
-          variants={variants}
-          className="w-full md:w-1/2 md:pl-12 px-4"
-        >
-          <p className="text-lg text-gray-300 mb-4">
-            Olá, sou <span className="text-orange-500">Walter</span>, um desenvolvedor apaixonado por criar soluções inovadoras e funcionais. Tenho experiência em várias tecnologias e sempre busco aprender mais. Minha missão é tornar a tecnologia acessível e útil para todos. 🚀
+        <div>
+          <img
+            src="/images/Walter.png"
+            alt="Walter"
+            className="w-96 h-96 object-cover rounded-lg"
+          />
+        </div>
+        <div className="flex flex-col justify-start p-5 gap-3">
+          <h1 className="text-orange-500 font-medium">Quem sou</h1>
+          <h2 className="font-light text-4xl">Walter M. Retke</h2>
+          <label className="text-sm font-light">Fullstack Developer</label>
+          <p className="max-w-2xl">
+            Olá, sou Walter, um desenvolvedor apaixonado por criar soluções
+            inovadoras e funcionais. Tenho experiência em várias tecnologias e
+            sempre busco aprender mais. Minha missão é tornar a tecnologia
+            acessível e útil para todos. 🚀 Destaco-me em PHP e Vue.js. Meu
+            trabalho é focado em criar interfaces de usuário limpas e
+            eficientes. Além disso, tenho experiência com JavaScript, React e
+            Next.js. Possuo amplo conhecimento e experiência no desenvolvimento
+            de software, contribuindo para a criação de plataformas importantes
+            no mercado brasileiro. Como engenheiro de software, busco
+            constantemente me aprimorar e aprender novas habilidades. Meu
+            objetivo é continuar desenvolvendo soluções que tornem a tecnologia
+            mais acessível e eficiente para todos. 💻
           </p>
-          <p className="text-lg text-gray-300 mb-4">
-            Destaco-me em <span className="text-orange-500">PHP</span> e <span className="text-orange-500">Vue.js</span>. Meu trabalho é focado em criar interfaces de usuário limpas e eficientes.
-          </p>
-          <p className="text-lg text-gray-300 mb-4">
-            Além disso, tenho experiência com <span className="text-orange-500">JavaScript</span>, <span className="text-orange-500">React</span> e <span className="text-orange-500">Next.js</span>. Possuo amplo conhecimento e experiência no desenvolvimento de software, contribuindo para a criação de plataformas importantes no mercado brasileiro.
-          </p>
-          <p className="text-lg text-gray-300">
-            Como engenheiro de software, busco constantemente me aprimorar e aprender novas habilidades. Meu objetivo é continuar desenvolvendo soluções que tornem a tecnologia mais acessível e eficiente para todos. 💻
-          </p>
-        </motion.div>
+        </div>
       </motion.div>
     </section>
   );

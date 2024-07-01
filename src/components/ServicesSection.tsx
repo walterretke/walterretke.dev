@@ -8,21 +8,18 @@ import { FaMobileAlt, FaGlobe, FaWordpress, FaCode, FaShoppingCart } from 'react
 const ServicesSection = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    triggerOnce: false,
-    threshold: 0, // Inicia a animação imediatamente ao entrar na viewport
+    triggerOnce: true,
+    threshold: 0.1,
   });
 
   useEffect(() => {
     if (inView) {
       controls.start('visible');
-    } else {
-      controls.start('hidden');
     }
   }, [controls, inView]);
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }, // Duração mais curta para resposta mais rápida
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
     hover: { scale: 1.05, transition: { duration: 0.3 }, cursor: 'pointer' },
   };
 
@@ -58,7 +55,7 @@ const ServicesSection = () => {
     <section className="flex flex-col items-center py-16 bg-black text-white">
       <motion.h2
         ref={ref}
-        initial="hidden"
+        initial={{ opacity: 0, y: 50 }}
         animate={controls}
         variants={variants}
         className="text-4xl font-semibold text-center mb-12"
@@ -69,8 +66,7 @@ const ServicesSection = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            ref={ref}
-            initial="hidden"
+            initial={{ opacity: 0, y: 50 }}
             animate={controls}
             whileHover="hover"
             variants={variants}
