@@ -3,7 +3,14 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const ProjectCard = ({ title, description, githubLink, imageUrl }) => {
+interface ProjectSectionProps {
+  title: string;
+  description: string;
+  githubLink: string;
+  imageUrl: string;
+}
+
+const ProjectSection: React.FC<ProjectSectionProps> = ({ title, description, githubLink, imageUrl }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -28,13 +35,17 @@ const ProjectCard = ({ title, description, githubLink, imageUrl }) => {
   );
 };
 
-const ProjectsSection = ({ projects }) => {
+interface ProjectsSectionProps {
+  projects: ProjectSectionProps[];
+}
+
+const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
   return (
     <section className="flex flex-col items-center py-16 bg-black text-white">
       <h2 className="text-4xl font-semibold text-center mb-12">Projetos Pessoais</h2>
       <div className="flex flex-wrap justify-center max-w-6xl mx-auto gap-8">
         {projects.map((project, index) => (
-          <ProjectCard
+          <ProjectSection
             key={index}
             title={project.title}
             description={project.description}

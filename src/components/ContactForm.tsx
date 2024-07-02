@@ -4,7 +4,8 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 
-function classNames(...classes) {
+// Adicionando anotação de tipo ao parâmetro rest
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -16,7 +17,8 @@ export default function Example() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contato</h2>
         <p className="mt-2 text-lg leading-8 text-white">
-        Você está interessado em trabalhar conosco? Preencha o formulário abaixo e entraremos em contato com você o mais rápido possível.        </p>
+          Você está interessado em trabalhar conosco? Preencha o formulário abaixo e entraremos em contato com você o mais rápido possível.
+        </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -141,7 +143,7 @@ export default function Example() {
               </Switch>
             </div>
             <Label className="text-sm leading-6 text-white">
-              Ao selecionar vocé concorda com os{' '}
+              Ao selecionar você concorda com os{' '}
               <a href="#" className="font-semibold text-orange-600">
                 Termos de&nbsp;privacidade
               </a>
