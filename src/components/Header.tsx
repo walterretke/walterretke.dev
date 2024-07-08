@@ -27,9 +27,9 @@ export default function Header() {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const handleSmoothScroll = (e) => {
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
-    const targetId = e.currentTarget.getAttribute("href").substring(1);
+    const targetId = e.currentTarget.getAttribute("href")!.substring(1);
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({
