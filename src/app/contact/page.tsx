@@ -1,13 +1,13 @@
 import React from 'react';
-import DefaultLayout from "@/layouts/DefaultLayout";
+import ContactLayout from "@/layouts/ContactLayout";
 import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
     return (
         <div>
-            <DefaultLayout>
+            <ContactLayout>
                 <ContactForm />
-            </DefaultLayout>
+            </ContactLayout>
         </div>
     );
 }

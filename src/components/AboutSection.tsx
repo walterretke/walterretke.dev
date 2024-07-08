@@ -24,7 +24,9 @@ const SobreMimSection = () => {
   };
 
   return (
-    <section className="flex flex-col items-center px-4 py-4 bg-black text-white">
+    <section 
+    id="about"
+    className="flex flex-col items-center px-4 py-4 bg-black text-white">
       <motion.div 
       className="min-h-10 min-w-10 bg-gray-900 flex sm:flex-row flex-col p-5 rounded-md border border-gray-800"
       >

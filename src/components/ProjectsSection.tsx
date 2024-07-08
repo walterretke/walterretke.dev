@@ -13,6 +13,7 @@ interface ProjectSectionProps {
 const ProjectSection: React.FC<ProjectSectionProps> = ({ title, description, githubLink, imageUrl }) => {
   return (
     <motion.div
+      id='portifolio'
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
       className="bg-gray-800 p-6 rounded-lg shadow-lg text-center hover:bg-gray-700 transition-colors duration-300 w-full sm:w-1/2 lg:w-1/3"

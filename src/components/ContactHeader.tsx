@@ -57,21 +57,6 @@ export default function Header() {
                 Início
               </li>
             </a>
-            <a href="#about" onClick={handleSmoothScroll}>
-              <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Sobre
-              </li>
-            </a>
-            <a href="#services" onClick={handleSmoothScroll}>
-              <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Serviços
-              </li>
-            </a>
-            <a href="#portifolio" onClick={handleSmoothScroll}>
-              <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Portifólio
-              </li>
-            </a>
             <a href="/contact">
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
                 Contato

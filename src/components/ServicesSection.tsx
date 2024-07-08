@@ -52,7 +52,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center py-16 bg-black text-white">
+    <section id='services' className="flex flex-col items-center py-16 bg-black text-white">
       <motion.h2
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
