@@ -31,7 +31,7 @@ export default function HeroSection() {
           className="relative mx-auto max-w-3xl py-32 sm:py-48 lg:py-56 text-center px-4 sm:px-6 lg:px-8"
         >
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-            Walter M. Retke Manske
+            Walter M. Retke
           </h1>
           <p className="mt-6 text-xl sm:text-2xl leading-8 text-white">
             Software Engineer
@@ -61,7 +61,7 @@ export default function HeroSection() {
               href="/contact"
               className="rounded-md bg-orange-600 px-4 py-2.5 text-base sm:text-lg font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
             >
-              Let's Work Together
+              Let&apos;s Work Together
             </a>
           </div>
         </motion.div>
