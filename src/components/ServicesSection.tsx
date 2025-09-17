@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion } from 'framer-motion';
-import { FaMobileAlt, FaGlobe, FaWordpress, FaCode, FaShoppingCart } from 'react-icons/fa';
+import { FaCloud, FaServer, FaCogs, FaCode, FaShieldAlt, FaRocket } from 'react-icons/fa';
 
 const ServicesSection = () => {
   const controls = useAnimation();
@@ -25,29 +25,34 @@ const ServicesSection = () => {
 
   const services = [
     {
-      icon: <FaMobileAlt className="text-orange-500" />,
-      title: 'Desenvolvedor de Aplicativos',
-      description: 'Desenvolvimento de Aplicativos para Celulares Android e iOS (iPhone).',
+      icon: <FaServer className="text-orange-500" />,
+      title: 'Microservices Architecture',
+      description: 'Design and implementation of scalable microservices using Java, Spring Boot, and RESTful APIs for enterprise-grade applications.',
     },
     {
-      icon: <FaGlobe className="text-orange-500" />,
-      title: 'Criação de Sites',
-      description: 'Desenvolvedor de Sites, HotSites, especialista em HTML, CSS, JavaScript, PHP, MySql.',
+      icon: <FaCloud className="text-orange-500" />,
+      title: 'Cloud Solutions & AWS',
+      description: 'AWS cloud infrastructure setup, migration strategies, and optimization for high-availability applications with cost-effective scaling.',
     },
     {
-      icon: <FaWordpress className="text-orange-500" />,
-      title: 'WordPress / Blog',
-      description: 'Especialista WordPress e Programador PHP, criação de Blogs e Plugins.',
+      icon: <FaCogs className="text-orange-500" />,
+      title: 'DevOps & CI/CD Implementation',
+      description: 'Complete DevOps pipeline setup with Docker, Kubernetes, Jenkins, and automated deployment strategies for continuous delivery.',
     },
     {
       icon: <FaCode className="text-orange-500" />,
-      title: 'Desenvolvedor Front-End',
-      description: 'Especialista em HTML5, JavaScript, CSS, jQuery, BootStrap, AngularJS, Vue.js...',
+      title: 'Full-Stack Development',
+      description: 'End-to-end application development with Java/Spring backend and React/Next.js frontend, ensuring seamless integration and performance.',
     },
     {
-      icon: <FaShoppingCart className="text-orange-500" />,
-      title: 'Loja Virtual / Ecommerce',
-      description: 'Criação de Loja Online, venda produtos ou receba pagamentos através da Internet.',
+      icon: <FaShieldAlt className="text-orange-500" />,
+      title: 'System Migration & Modernization',
+      description: 'Legacy system modernization, migrating from monolithic to microservices architecture with zero-downtime deployment strategies.',
+    },
+    {
+      icon: <FaRocket className="text-orange-500" />,
+      title: 'Performance Optimization',
+      description: 'Application performance tuning, database optimization, and scalability improvements for high-traffic enterprise systems.',
     },
   ];
 
@@ -60,7 +65,7 @@ const ServicesSection = () => {
         variants={variants}
         className="text-4xl font-semibold text-center mb-12"
       >
-        Serviços
+        Services
       </motion.h2>
       <div className="flex flex-wrap justify-center max-w-6xl mx-auto">
         {services.map((service, index) => (

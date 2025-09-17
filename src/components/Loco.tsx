@@ -32,7 +32,7 @@ const Loco = () => {
         variants={variants}
         className="text-4xl font-semibold text-center mb-12"
       >
-        Sobre mim
+        About me
       </motion.h2>
       <motion.div
         ref={ref}
@@ -58,16 +58,16 @@ const Loco = () => {
           className="w-full md:w-1/2 md:pl-12 px-4"
         >
           <p className="text-lg text-gray-300 mb-4">
-            Olá, sou <span className="text-orange-500">Walter</span>, um desenvolvedor apaixonado por criar soluções inovadoras e funcionais. Tenho experiência em várias tecnologias e sempre busco aprender mais. Minha missão é tornar a tecnologia acessível e útil para todos. 🚀
+            Hello, I'm <span className="text-orange-500">Walter</span>, a developer passionate about building innovative and functional solutions. I have experience across various technologies and I am always eager to learn more. My mission is to make technology accessible and useful for everyone. 🚀
           </p>
           <p className="text-lg text-gray-300 mb-4">
-            Destaco-me em <span className="text-orange-500">PHP</span> e <span className="text-orange-500">Vue.js</span>. Meu trabalho é focado em criar interfaces de usuário limpas e eficientes.
+            I specialize in <span className="text-orange-500">Java</span> and <span className="text-orange-500">Spring Boot</span>. My work focuses on building robust backends and clean, efficient user interfaces.
           </p>
           <p className="text-lg text-gray-300 mb-4">
-            Além disso, tenho experiência com <span className="text-orange-500">JavaScript</span>, <span className="text-orange-500">React</span> e <span className="text-orange-500">Next.js</span>. Possuo amplo conhecimento e experiência no desenvolvimento de software, contribuindo para a criação de plataformas importantes no mercado brasileiro.
+            I also have experience with <span className="text-orange-500">JavaScript</span>, <span className="text-orange-500">React</span> and <span className="text-orange-500">Next.js</span>. I have extensive knowledge and experience in software development, contributing to building important platforms in the Brazilian market.
           </p>
           <p className="text-lg text-gray-300">
-            Como engenheiro de software, busco constantemente me aprimorar e aprender novas habilidades. Meu objetivo é continuar desenvolvendo soluções que tornem a tecnologia mais acessível e eficiente para todos. 💻
+            As a software engineer, I constantly seek to improve myself and learn new skills. My goal is to continue developing solutions that make technology more accessible and efficient for everyone. 💻
           </p>
         </motion.div>
       </motion.div>

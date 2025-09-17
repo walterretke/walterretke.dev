@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Field, Label, Switch } from '@headlessui/react'
 
-// Adicionando anotação de tipo ao parâmetro rest
+// Adding type annotation to the rest parameter
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
@@ -15,16 +15,16 @@ export default function Example() {
   return (
     <div className="isolate bg-black px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contato</h2>
+        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Contact</h2>
         <p className="mt-2 text-lg leading-8 text-white">
-          Você está interessado em trabalhar conosco? Preencha o formulário abaixo e entraremos em contato com você o mais rápido possível.
+          Interested in working together? Fill out the form below and we will get back to you as soon as possible.
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-white">
-              Primeiro nome
+              First name
             </label>
             <div className="mt-2.5">
               <input
@@ -38,7 +38,7 @@ export default function Example() {
           </div>
           <div>
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-white">
-              Segundo nome
+              Last name
             </label>
             <div className="mt-2.5">
               <input
@@ -52,7 +52,7 @@ export default function Example() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="company" className="block text-sm font-semibold leading-6 text-white">
-              Empresa
+              Company
             </label>
             <div className="mt-2.5">
               <input
@@ -80,12 +80,12 @@ export default function Example() {
           </div>
           <div className="sm:col-span-2">
             <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-white">
-              Numero de telefone
+              Phone number
             </label>
             <div className="relative mt-2.5">
               <div className="absolute inset-y-0 left-0 flex items-center">
                 <label htmlFor="country" className="sr-only">
-                  País
+                  Country
                 </label>
                 <select
                   id="country"
@@ -132,7 +132,7 @@ export default function Example() {
                   'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-white/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600',
                 )}
               >
-                <span className="sr-only">Concordo com os termos</span>
+                <span className="sr-only">I agree to the terms</span>
                 <span
                   aria-hidden="true"
                   className={classNames(
@@ -143,9 +143,9 @@ export default function Example() {
               </Switch>
             </div>
             <Label className="text-sm leading-6 text-white">
-              Ao selecionar você concorda com os{' '}
+              By selecting this, you agree to our{' '}
               <a href="#" className="font-semibold text-orange-600">
-                Termos de&nbsp;privacidade
+                Privacy Terms
               </a>
               .
             </Label>
@@ -156,7 +156,7 @@ export default function Example() {
             type="submit"
             className="block w-full rounded-md bg-orange-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Vamos conversar!
+            Let's talk!
           </button>
         </div>
       </form>

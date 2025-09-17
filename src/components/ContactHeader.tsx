@@ -54,12 +54,12 @@ export default function Header() {
           <ul className="flex gap-4 md:gap-6 lg:gap-8">
             <a href="/home">
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Início
+                Home
               </li>
             </a>
             <a href="/contact">
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Contato
+                Contact
               </li>
             </a>
           </ul>
@@ -99,26 +99,26 @@ export default function Header() {
           <ul className="flex flex-col gap-4 mt-12">
             <a href="/home">
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Início
+                Home
               </li>
             </a>
             <a href="#about" onClick={handleSmoothScroll}>
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Sobre
+                About
               </li>
             </a>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">
-              Serviços
+              Services
             </li>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">
-              Portfólio
+              Portfolio
             </li>
             <li className="hover:cursor-pointer hover:text-gray-400 transition">
               Blog
             </li>
             <a href="/contact">
               <li className="hover:cursor-pointer hover:text-gray-400 transition">
-                Contato
+                Contact
               </li>
             </a>
             <li className="hover:cursor-pointer flex items-center hover:text-gray-400 transition">

@@ -7,10 +7,10 @@ export default function Home() {
       <div className="text-center">
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-orange-600">404</h1>
-          <h2>Página não encontrada</h2>
+          <h2>Page not found</h2>
         </div>
         <a className="underline" href="/home">
-          Ir para a home
+          Go to home
         </a>
       </div>
     </main>

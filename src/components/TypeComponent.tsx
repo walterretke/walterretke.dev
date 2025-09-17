@@ -6,7 +6,7 @@ const TypeComponent = () => {
     <div>
       <h1>
         <Typewriter
-          words={['Desenvolvedor Fullstack', 'Laravel, Next', 'Vue, React']}
+          words={['Backend Engineer', 'Microservices Architecture', 'Cloud Operations', 'DevOps & CI/CD']}
           loop={0}
           cursor
           cursorStyle='|'

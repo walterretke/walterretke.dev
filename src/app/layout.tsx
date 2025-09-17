@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Walter - Desenvolvedor de Aplicativos - SC - Programador PHP - Freelancer - WordPress - Sites - Sistemas",
+  title: "Walter - Java/Spring Boot Developer - Cloud Engineer - Backend Engineer",
   description: "Personal website of Walter Matheus Retke",
 };
 
