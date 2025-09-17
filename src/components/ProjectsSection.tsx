@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-interface ProjectCardProps {
+export interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
